@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      content="width=device-width, initial-scale=1, shrink-to-fit=yes"
     />
     <!-- Bootstrap CSS -->
     <link
@@ -20,32 +20,47 @@
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg navbar-dark"
-      style="background-color: #005a92"
+      style="
+        background-color: #005a92;
+        display: flex;
+        justify-content: space-between;
+      "
     >
+    <div class="container-fluid"> 
       <div class="collapse navbar-collapse" id="navbarNav">
+        <div>
         <ul class="navbar-nav">
           <li class="nav-item">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images\CCC_logo_white_text.png"
+              width="300"
+              height="auto"
+            />
+          </a>
+        </li> 
+          <li class="nav-item" style="margin-top: 15px;">
             <a
               class="nav-link"
               href="https://www.cloviscollege.edu/future-students/future-students.html"
               >Future Students</a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="margin-top: 15px; ">
             <a
               class="nav-link"
               href="https://www.cloviscollege.edu/current-students/index.html"
               >Current Students</a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="margin-top: 15px;">
             <a
               class="nav-link"
               href="https://www.cloviscollege.edu/faculty-and-staff/index.html"
               >Faculty & Staff</a
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item" style="margin-top: 15px;">
             <a
               class="nav-link"
               href="https://www.cloviscollege.edu/alumni-and-community/community-connections.html"
@@ -54,18 +69,22 @@
           </li>
         </ul>
       </div>
+
       <form class="form-inline">
         <input
           class="form-control mr-sm-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
+          style="position: absolute; right:80px"
         />
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="position: absolute; right:5px">
           Search
         </button>
       </form>
+    </div>
     </nav>
+
     <!-- Image Carousel -->
     <div class="container-fluid">
       <div class="row">
@@ -110,9 +129,12 @@
           <p style="line-height: 0.0001; animation: fadeIn 2s">
             SPRING 2025 CLASSES START JANUARY 9
           </p>
-          <button type="button" class="btn btn-primary btn-lg">
-            Apply Here!
-          </button>
+          <a
+            class="btn btn-primary"
+            href="https://www.cloviscollege.edu/admissions-and-aid/admissions/index.html"
+            role="button"
+            >Apply</a
+          >
         </div>
         <div
           id="myCarousel"

@@ -42,6 +42,10 @@ p {
   line-height: 1;
 }
 
+.container-fluid {
+  line-height: 1;
+}
+
 .row {
   margin-bottom: 40px;
 }
@@ -86,9 +90,7 @@ p {
 .container {
   display: flex;
   width: 100%;
-  height: 500px;
-  margin-right: auto;
-  margin-left: auto;
+  height: 80px;
 }
 
 /* opacity transparent */
